@@ -1,0 +1,30 @@
+@mixin flex()
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+body
+    margin: 0
+    padding: 0
+    cursor: default
+    box-sizing: border-box
+    font-family: "Rubik", sans-serif
+
+p, h1, h2, h3, button, span
+    margin: 0
+    padding: 0
+
+.container
+    padding: 0 180px
+
+a, button
+    &:hover
+        cursor: pointer
+
+a
+    text-decoration: none
+    color: $el-color
+button, input
+    border: none
+    &:active, &:focus
+        outline: none
