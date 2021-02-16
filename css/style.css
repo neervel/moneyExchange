@@ -35,7 +35,7 @@ button:active, button:focus, input:active, input:focus {
 
 .header {
   height: 90px;
-  padding: 20px 100px;
+  padding: 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,4 +95,104 @@ button:active, button:focus, input:active, input:focus {
   background-color: #fff;
   font-size: 16px;
   color: #4E5983;
+}
+
+.hero {
+  background: linear-gradient(140.59deg, #562EC2 29.59%, #A07EFE 73.59%);
+  color: #fff;
+}
+
+.hero-block {
+  padding: 100px 0;
+}
+
+.hero__title {
+  text-align: center;
+  font-size: 60px;
+  max-width: 850px;
+  margin: 0 auto;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.hero-calc {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #838ba8;
+  padding: 80px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  border-radius: 20px;
+}
+
+.hero-calc-give, .hero-calc-get {
+  width: 300px;
+}
+
+.hero-calc-give__title, .hero-calc-get__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4E5983;
+  margin-bottom: 30px;
+}
+
+.hero-calc-give__subtitle, .hero-calc-get__subtitle {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hero-calc-give-input, .hero-calc-get-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.hero-calc-give-input::after, .hero-calc-get-input::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  bottom: -10px;
+  right: 0;
+  background-color: #text-color;
+  z-index: 999;
+}
+
+.hero-calc-give__input, .hero-calc-get__input {
+  font-size: 20px;
+}
+
+.hero-calc__submit {
+  width: 160px;
+  height: 55px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(125.68deg, #562EC2 23.69%, #A07EFE 97.95%);
 }

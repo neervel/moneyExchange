@@ -1,0 +1,58 @@
+.hero
+    background: linear-gradient(140.59deg, #562EC2 29.59%, #A07EFE 73.59%)
+    color: #fff
+    &-block
+        padding: 100px 0
+    &__title
+        text-align: center
+        font-size: 60px
+        max-width: 850px
+        margin: 0 auto
+        font-weight: 700
+        margin-bottom: 30px
+    &__subtitle
+        font-size: 18px
+        font-weight: normal
+        text-align: center
+        margin-bottom: 55px
+    &-calc
+        width: 1100px
+        margin: 0 auto
+        background-color: #fff
+        color: $text-color
+        padding: 80px 100px
+        +flex
+        align-items: start
+        border-radius: 20px
+        &-give, &-get  
+            width: 300px 
+            &__title
+                font-size: 18px
+                font-weight: 500
+                color: $el-color
+                margin-bottom: 30px
+            &__subtitle
+                display: block
+                font-size: 14px
+                margin-bottom: 10px
+            &-input
+                +flex
+                position: relative
+                &::after
+                    position: absolute
+                    content: ""
+                    height: 1px
+                    width: 100%
+                    bottom: -10px
+                    right: 0
+                    background-color: #text-color
+                    z-index: 999
+            &__input
+                font-size: 20px
+        &__submit
+            width: 160px
+            height: 55px
+            border-radius: 10px
+            color: #fff
+            font-weight: 700
+            background: linear-gradient(125.68deg, #562EC2 23.69%, #A07EFE 97.95%)
